@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/nctmainbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/messapiabold"
+            android:text="@string/songs"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/ScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewLove"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewLove"
+                        android:layout_width="116dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/love"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayLove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+
+                </LinearLayout>
+                //90's Love
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewMis"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewMis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/mis"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayMis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+
+                </LinearLayout>
+                //Misfit
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewRoof"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewRoof"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/roof"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayRoof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                // Raise the roof
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewVol"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewVol"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/vol"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayVol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                // Volcano
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewBul"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewBul"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/bulb"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayBul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                // 백열등
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewDan"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewDan"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/rain"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayDan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //Dancing in the rain
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewMy"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewMy"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/my"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayMy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //My Everything
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewPast"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewPast"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/past"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayPast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //past to present
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewWish"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewWish"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/wish"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayWish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+
+                </LinearLayout>
+                //make a wish
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewDeja"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewDeja"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/deja"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayDeja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+
+                </LinearLayout>
+                //Deja vu
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewWay"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewWay"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/wayv"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayWay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //nectar
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewMusic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewMusic"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/music"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayMusic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //Music, dance
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewPia"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewPia"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/piano"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayPia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //피아노
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewHome"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewHome"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/home"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //From home
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewHomeK"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewHomeK"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/homek"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayHomeK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //From home K
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewWishE"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewWishE"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/wishe"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayWishE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //make a wish E
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewPre"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewPre"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/present"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayPre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+
+                </LinearLayout>
+                //present
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewIt"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewIt"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/it"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayIt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //work it
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewAby"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewAby"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/aby"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayAby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                // 단잠
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewIou"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewIou"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/iou"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayIou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //iou
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewOut"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/part" />
+
+                    <TextView
+                        android:id="@+id/textViewOut"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jeju"
+                        android:text="@string/outro"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPlayOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="#000"
+                        android:onClick="onClickPlay"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+                </LinearLayout>
+                //outro
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nctmainbg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:fontFamily="@font/messapiabold"
+        android:text="@string/mem" />
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewTaeil"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/taeil" />
+
+                <TextView
+                    android:id="@+id/textViewTaeil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/taeil"/>
+            </LinearLayout> //태일 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewJohnny"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/johnny" />
+
+                <TextView
+                    android:id="@+id/textJhonny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/johnny" />
+
+
+            </LinearLayout>  //쟈니 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewTaeyong"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/taeyong" />
+
+                <TextView
+                    android:id="@+id/textViewTaeyong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/taeyong"/>
+            </LinearLayout> //태용 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewYuta"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/yuta" />
+
+                <TextView
+                    android:id="@+id/textViewYuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/yuta"/>
+            </LinearLayout> //유타 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewDoyoung"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/doyoung" />
+
+                <TextView
+                    android:id="@+id/textViewDoyoung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/doyoung"/>
+            </LinearLayout> //도영 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewTen"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/ten" />
+
+                <TextView
+                    android:id="@+id/textViewTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/ten"/>
+            </LinearLayout> //텐 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewJaehyun"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/jaehyun" />
+
+                <TextView
+                    android:id="@+id/textViewJaehyun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/jaehyun"/>
+            </LinearLayout> //재현 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewWinwin"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/winwin" />
+
+                <TextView
+                    android:id="@+id/textViewWinwin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/winwin"/>
+            </LinearLayout> //윈윈 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewMark"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/mark" />
+
+                <TextView
+                    android:id="@+id/textViewMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/mark"/>
+            </LinearLayout> //마크 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewRenjun"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/renjun" />
+
+                <TextView
+                    android:id="@+id/textViewRenjun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/renjun"/>
+            </LinearLayout> //런쥔 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewJeno"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/jeno" />
+
+                <TextView
+                    android:id="@+id/textViewJeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/jeno"/>
+            </LinearLayout> //제노 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewHaechan"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/haechan" />
+
+                <TextView
+                    android:id="@+id/textViewHaechan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/haechan"/>
+            </LinearLayout> //해찬 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewJaemin"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/jaemin" />
+
+                <TextView
+                    android:id="@+id/textViewJaemin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/jaemin"/>
+            </LinearLayout> //재민 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewChenle"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/chenle" />
+
+                <TextView
+                    android:id="@+id/textViewChenle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/chenle"/>
+            </LinearLayout> //천러 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewJisung"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/jisung" />
+
+                <TextView
+                    android:id="@+id/textViewJisung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/jisung"/>
+            </LinearLayout> //지성 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewLucas"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/lucas" />
+
+                <TextView
+                    android:id="@+id/textViewLucas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/lucas"/>
+            </LinearLayout> //루카스 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewJungwoo"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/jungwoo" />
+
+                <TextView
+                    android:id="@+id/textViewJungwoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/jungwoo"/>
+            </LinearLayout> //정우 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewKun"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/kun" />
+
+                <TextView
+                    android:id="@+id/textViewKun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/kun"/>
+            </LinearLayout> //쿤 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewXiaojun"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/xiaojun" />
+
+                <TextView
+                    android:id="@+id/textViewXiaojun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/xiaojun"/>
+            </LinearLayout> //샤오쥔 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewYangyang"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/yangyang" />
+
+                <TextView
+                    android:id="@+id/textViewYangyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/yangyang"/>
+            </LinearLayout> //양양 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewHendery"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/hendery" />
+
+                <TextView
+                    android:id="@+id/textViewHendery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/hendery"/>
+            </LinearLayout> //헨드리 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewShotaro"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/shotaro" />
+
+                <TextView
+                    android:id="@+id/textViewShotaro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/shotaro"/>
+            </LinearLayout> //쇼타로 소개란
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewSungchan"
+                    android:layout_width="80dp"
+                    android:layout_height="110dp"
+                    app:srcCompat="@drawable/sungchan" />
+
+                <TextView
+                    android:id="@+id/textViewSungchan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/jeju"
+                    android:text="@string/sungchan"/>
+            </LinearLayout> //성찬 소개란
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

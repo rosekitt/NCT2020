@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    android:background="@drawable/nctmainbg2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:fontFamily="@font/messapiabold"
+        android:text="@string/musicvideo" />
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" >
+
+
+
+
+        <LinearLayout
+            android:layout_width="288dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/reson"/>
+
+            <VideoView
+                android:id="@+id/videoViewRes"
+                android:layout_width="288dp"
+                android:layout_height="162dp"/>
+
+            <TextView
+                android:id="@+id/textViewlove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/lovev" />
+
+            <VideoView
+                android:id="@+id/videoViewlove"
+                android:layout_width="288dp"
+                android:layout_height="162dp" />
+
+            <TextView
+                android:id="@+id/textViewWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/work" />
+
+            <VideoView
+                android:id="@+id/videoViewWork"
+                android:layout_width="288dp"
+                android:layout_height="162dp" />
+
+            <TextView
+                android:id="@+id/textViewWish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="@string/wisht" />
+
+            <VideoView
+                android:id="@+id/videoViewWish"
+                android:layout_width="288dp"
+                android:layout_height="162dp" />
+
+            <TextView
+                android:id="@+id/textViewHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/fromhome" />
+
+            <VideoView
+                android:id="@+id/videoViewHome"
+                android:layout_width="288dp"
+                android:layout_height="162dp" />
+
+            <TextView
+                android:id="@+id/textViewMisFit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/misfit" />
+
+            <VideoView
+                android:id="@+id/videoViewMisFit"
+                android:layout_width="288dp"
+                android:layout_height="162dp" />
+
+            <TextView
+                android:id="@+id/textViewDejavu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/messapiabold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/mudaero" />
+
+            <VideoView
+                android:id="@+id/videoViewDejavu"
+                android:layout_width="288dp"
+                android:layout_height="162dp"
+                android:layout_marginBottom="35dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
